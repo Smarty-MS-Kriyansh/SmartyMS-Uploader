@@ -391,7 +391,7 @@ async def txt_handler(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("𝐀𝐋𝐋 𝐃𝐎𝐍𝐄😚✅🔸🔹 Download By💳: @SmartBoy_ApnaMS")
+    await m.reply_text("𝐀𝐋𝐋 𝐃𝐎𝐍𝐄 NOW TIMES FOR REACTIONS.✅🔸")
 
 # Advance
 
@@ -625,7 +625,7 @@ async def txt_handler(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("𝐀𝐋𝐋 𝐃𝐎𝐍𝐄😚✅🔸🔹 Download By💳 : @SmartBoy_ApnaMS🌹")
+    await m.reply_text("𝐀𝐋𝐋 𝐃𝐎𝐍𝐄 NOW TIMES FOR REACTIONS.✅🔸")
 
 
 
