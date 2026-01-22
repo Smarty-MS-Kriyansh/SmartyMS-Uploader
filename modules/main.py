@@ -105,7 +105,7 @@ async def main():
         
 class Data:
     START = (
-        "🌟 Welcome Dear😘💜 {0}! 🌟\n\n"
+        "🌟 Welcome Dear💚😘 {0}! 🌟\n\n"
     )
 # Define the start command handler
 @bot.on_message(filters.command("start"))
@@ -120,35 +120,35 @@ async def start(client: Client, msg: Message):
     await asyncio.sleep(1)
     await start_message.edit_text(
         Data.START.format(msg.from_user.mention) +
-        "Initializing Uploader bot... 🤖\n\n"
+        "Initializing Uploader bot...😚🤖\n\n"
         "Progress: [⬜⬜⬜⬜⬜⬜⬜⬜⬜] 0%\n\n"
     )
 
     await asyncio.sleep(1)
     await start_message.edit_text(
         Data.START.format(msg.from_user.mention) +
-        "Loading features... ⏳\n\n"
+        "Loading features...😗⏳\n\n"
         "Progress: [🟥🟥🟥⬜⬜⬜⬜⬜⬜] 25%\n\n"
     )
     
     await asyncio.sleep(1)
     await start_message.edit_text(
         Data.START.format(msg.from_user.mention) +
-        "This may take a moment, sit back and relax! 🥵\n\n"
+        "This may take a moment, sit back and relax!🫣💪\n\n"
         "Progress: [🟧🟧🟧🟧🟧⬜⬜⬜⬜] 50%\n\n"
     )
 
     await asyncio.sleep(1)
     await start_message.edit_text(
         Data.START.format(msg.from_user.mention) +
-        "Checking Bot Status... 🔍\n\n"
+        "Checking Bot Status...😙🔍\n\n"
         "Progress: [🟨🟨🟨🟨🟨🟨🟨⬜⬜] 75%\n\n"
     )
 
     await asyncio.sleep(1)
     await start_message.edit_text(
         Data.START.format(msg.from_user.mention) +
-        "Checking status Okay... Command is Private Dear.🌚**Bot Made BY @SmartBoy_ApnaMS**🔍\n\n"
+        "Checking status Okay... Command is Private Dear🫂.**Bot Made BY @SmartBoy_ApnaMS**🔍\n\n"
         "Progress:[🟩🟩🟩🟩🟩🟩🟩🟩🟩] 100%\n\n"
     )
 
@@ -158,9 +158,9 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["darling"]) )
+@bot.on_message(filters.command(["Love"]) )
 async def txt_handler(bot: Client, m: Message):
-    editable = await m.reply_text(f"**🔹Hi I am Poweful Lovely TXT Downloader📥 Bot.**\n🔹**Send me the TXT file and Just wait and Watch😚.**")
+    editable = await m.reply_text(f"**🔹Hi I am Poweful Lovely TXT Downloader📥 Bot.**\n🔹**Send me the TXT file and Just wait and Watch💀.**")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -176,11 +176,11 @@ async def txt_handler(bot: Client, m: Message):
             links.append(i.split("://", 1))
         os.remove(x)
     except:
-        await m.reply_text("Hii Cutie Pie.🌚😘")
+        await m.reply_text("Are yaar txt file Bhejni thi,Chal koi na tap on /Love then resend txt file to me again🫂.")
         os.remove(x)
         return
    
-    await editable.edit(f"Total links found are **{len(links)}**\n\nSend From where you want to download🤔 initial is **1**")
+    await editable.edit(f"Total links found are **{len(links)}**\n\nSend From where you want to download🙄 initial is **1**")
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
     await input0.delete(True)
@@ -188,11 +188,11 @@ async def txt_handler(bot: Client, m: Message):
         arg = int(raw_text)
     except:
         arg = 1
-    await editable.edit("**Enter Your Batch Name or send '/ms' for grabing from text filename.😉**")
+    await editable.edit("**Enter Your Batch Name or send '/mahi' for grabing from text filename🧐.**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
-    if raw_text0 == '/ms':
+    if raw_text0 == '/mahi':
         b_name = file_name
     else:
         b_name = raw_text0
